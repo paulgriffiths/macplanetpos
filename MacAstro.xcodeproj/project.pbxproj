@@ -10,7 +10,28 @@
 		DA1B07FF1AF6CAF2004E4588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B07FE1AF6CAF2004E4588 /* AppDelegate.swift */; };
 		DA1B08011AF6CAF2004E4588 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1B08001AF6CAF2004E4588 /* Images.xcassets */; };
 		DA1B08041AF6CAF2004E4588 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1B08021AF6CAF2004E4588 /* MainMenu.xib */; };
-		DA1B08101AF6CAF2004E4588 /* MacAstroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B080F1AF6CAF2004E4588 /* MacAstroTests.swift */; };
+		DA1B081B1AF6CB99004E4588 /* SphericalCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */; };
+		DA1B081C1AF6CB99004E4588 /* SphericalCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */; };
+		DA1B081E1AF6CE92004E4588 /* SphericalCoordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B081D1AF6CE92004E4588 /* SphericalCoordsTests.swift */; };
+		DA1B08201AF6CFDB004E4588 /* RectangularCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */; };
+		DA1B08211AF6CFDB004E4588 /* RectangularCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */; };
+		DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08221AF6D337004E4588 /* math_utilities.swift */; };
+		DA1B08241AF6D337004E4588 /* math_utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08221AF6D337004E4588 /* math_utilities.swift */; };
+		DA1B08271AF6D7E2004E4588 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08251AF6D3CF004E4588 /* UtilitiesTests.swift */; };
+		DA1B08291AF6DEB3004E4588 /* RectangularCoordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08281AF6DEB3004E4588 /* RectangularCoordsTests.swift */; };
+		DA1B082B1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */; };
+		DA1B082C1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */; };
+		DA1B082E1AF6E4EE004E4588 /* AstroFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B082D1AF6E4EE004E4588 /* AstroFunctionsTests.swift */; };
+		DA1B08301AF6F048004E4588 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B082F1AF6F048004E4588 /* Planet.swift */; };
+		DA1B08311AF6F048004E4588 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B082F1AF6F048004E4588 /* Planet.swift */; };
+		DA1B08331AF6F18A004E4588 /* OrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */; };
+		DA1B08341AF6F18A004E4588 /* OrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */; };
+		DA1B08391AF6F4AD004E4588 /* OrbitalElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08381AF6F4AD004E4588 /* OrbitalElementsTests.swift */; };
+		DA1B083B1AF70121004E4588 /* date_utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B083A1AF70121004E4588 /* date_utilities.swift */; };
+		DA1B083C1AF70121004E4588 /* date_utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B083A1AF70121004E4588 /* date_utilities.swift */; };
+		DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B083D1AF701FB004E4588 /* JulianDate.swift */; };
+		DA1B083F1AF701FB004E4588 /* JulianDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B083D1AF701FB004E4588 /* JulianDate.swift */; };
+		DA1B08411AF703F9004E4588 /* JulianDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08401AF703F9004E4588 /* JulianDateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +52,20 @@
 		DA1B08031AF6CAF2004E4588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DA1B08091AF6CAF2004E4588 /* MacAstroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAstroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1B080E1AF6CAF2004E4588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA1B080F1AF6CAF2004E4588 /* MacAstroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAstroTests.swift; sourceTree = "<group>"; };
+		DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphericalCoords.swift; sourceTree = "<group>"; };
+		DA1B081D1AF6CE92004E4588 /* SphericalCoordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphericalCoordsTests.swift; sourceTree = "<group>"; };
+		DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularCoords.swift; sourceTree = "<group>"; };
+		DA1B08221AF6D337004E4588 /* math_utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = math_utilities.swift; sourceTree = "<group>"; };
+		DA1B08251AF6D3CF004E4588 /* UtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
+		DA1B08281AF6DEB3004E4588 /* RectangularCoordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularCoordsTests.swift; sourceTree = "<group>"; };
+		DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFunctions.swift; sourceTree = "<group>"; };
+		DA1B082D1AF6E4EE004E4588 /* AstroFunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFunctionsTests.swift; sourceTree = "<group>"; };
+		DA1B082F1AF6F048004E4588 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrbitalElements.swift; sourceTree = "<group>"; };
+		DA1B08381AF6F4AD004E4588 /* OrbitalElementsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrbitalElementsTests.swift; sourceTree = "<group>"; };
+		DA1B083A1AF70121004E4588 /* date_utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = date_utilities.swift; sourceTree = "<group>"; };
+		DA1B083D1AF701FB004E4588 /* JulianDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JulianDate.swift; sourceTree = "<group>"; };
+		DA1B08401AF703F9004E4588 /* JulianDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JulianDateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +107,7 @@
 		DA1B07FB1AF6CAF2004E4588 /* MacAstro */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B08191AF6CB1E004E4588 /* Astro */,
 				DA1B07FE1AF6CAF2004E4588 /* AppDelegate.swift */,
 				DA1B08001AF6CAF2004E4588 /* Images.xcassets */,
 				DA1B08021AF6CAF2004E4588 /* MainMenu.xib */,
@@ -92,7 +127,12 @@
 		DA1B080C1AF6CAF2004E4588 /* MacAstroTests */ = {
 			isa = PBXGroup;
 			children = (
-				DA1B080F1AF6CAF2004E4588 /* MacAstroTests.swift */,
+				DA1B08401AF703F9004E4588 /* JulianDateTests.swift */,
+				DA1B08381AF6F4AD004E4588 /* OrbitalElementsTests.swift */,
+				DA1B082D1AF6E4EE004E4588 /* AstroFunctionsTests.swift */,
+				DA1B08281AF6DEB3004E4588 /* RectangularCoordsTests.swift */,
+				DA1B08251AF6D3CF004E4588 /* UtilitiesTests.swift */,
+				DA1B081D1AF6CE92004E4588 /* SphericalCoordsTests.swift */,
 				DA1B080D1AF6CAF2004E4588 /* Supporting Files */,
 			);
 			path = MacAstroTests;
@@ -104,6 +144,21 @@
 				DA1B080E1AF6CAF2004E4588 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA1B08191AF6CB1E004E4588 /* Astro */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */,
+				DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */,
+				DA1B08221AF6D337004E4588 /* math_utilities.swift */,
+				DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */,
+				DA1B082F1AF6F048004E4588 /* Planet.swift */,
+				DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */,
+				DA1B083A1AF70121004E4588 /* date_utilities.swift */,
+				DA1B083D1AF701FB004E4588 /* JulianDate.swift */,
+			);
+			name = Astro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1B083B1AF70121004E4588 /* date_utilities.swift in Sources */,
+				DA1B08201AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
+				DA1B08331AF6F18A004E4588 /* OrbitalElements.swift in Sources */,
 				DA1B07FF1AF6CAF2004E4588 /* AppDelegate.swift in Sources */,
+				DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */,
+				DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */,
+				DA1B08301AF6F048004E4588 /* Planet.swift in Sources */,
+				DA1B082B1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
+				DA1B081B1AF6CB99004E4588 /* SphericalCoords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +276,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1B08101AF6CAF2004E4588 /* MacAstroTests.swift in Sources */,
+				DA1B083C1AF70121004E4588 /* date_utilities.swift in Sources */,
+				DA1B08291AF6DEB3004E4588 /* RectangularCoordsTests.swift in Sources */,
+				DA1B082E1AF6E4EE004E4588 /* AstroFunctionsTests.swift in Sources */,
+				DA1B08391AF6F4AD004E4588 /* OrbitalElementsTests.swift in Sources */,
+				DA1B082C1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
+				DA1B083F1AF701FB004E4588 /* JulianDate.swift in Sources */,
+				DA1B08311AF6F048004E4588 /* Planet.swift in Sources */,
+				DA1B08211AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
+				DA1B08411AF703F9004E4588 /* JulianDateTests.swift in Sources */,
+				DA1B08271AF6D7E2004E4588 /* UtilitiesTests.swift in Sources */,
+				DA1B081E1AF6CE92004E4588 /* SphericalCoordsTests.swift in Sources */,
+				DA1B08241AF6D337004E4588 /* math_utilities.swift in Sources */,
+				DA1B08341AF6F18A004E4588 /* OrbitalElements.swift in Sources */,
+				DA1B081C1AF6CB99004E4588 /* SphericalCoords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
