@@ -11,7 +11,7 @@ import Darwin
 public func kepler(mAnom: Double, ecc: Double) -> Double {
     let desiredAccuracy = 1e-6
     
-    assert(ecc >= 0 && ecc <= 1, "Eccentricity must be between 0.0 and 1.0, inclusive")
+    precondition(ecc >= 0 && ecc <= 1, "Eccentricity must be between 0.0 and 1.0, inclusive")
     
     var eAnom = mAnom
     var diff : Double
