@@ -100,6 +100,9 @@
 		DA1B0A781AFC73EC004E4588 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */; };
 		DA1B0A791AFC73EC004E4588 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */; };
 		DA1B0A7B1AFC7646004E4588 /* ZodiacSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */; };
+		DA1B0A7D1AFC78A3004E4588 /* ZodiacCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */; };
+		DA1B0A7E1AFC78A3004E4588 /* ZodiacCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */; };
+		DA1B0A801AFC7967004E4588 /* ZodiacCoordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7F1AFC7967004E4588 /* ZodiacCoordsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +178,8 @@
 		DA1B0A721AFC7123004E4588 /* HMSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMSTests.swift; sourceTree = "<group>"; };
 		DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacSign.swift; sourceTree = "<group>"; };
 		DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacSignTests.swift; sourceTree = "<group>"; };
+		DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacCoords.swift; sourceTree = "<group>"; };
+		DA1B0A7F1AFC7967004E4588 /* ZodiacCoordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacCoordsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +245,7 @@
 		DA1B080C1AF6CAF2004E4588 /* MacAstroTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A7F1AFC7967004E4588 /* ZodiacCoordsTests.swift */,
 				DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */,
 				DA1B0A721AFC7123004E4588 /* HMSTests.swift */,
 				DA1B0A6D1AFC6D15004E4588 /* DMSTests.swift */,
@@ -280,6 +286,7 @@
 				DA1B082F1AF6F048004E4588 /* Planet.swift */,
 				DA1B083D1AF701FB004E4588 /* JulianDate.swift */,
 				DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */,
+				DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */,
 			);
 			name = Astro;
 			sourceTree = "<group>";
@@ -461,6 +468,7 @@
 				DA1B0A221AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */,
 				DA1B0A5A1AFC5B47004E4588 /* Moon.swift in Sources */,
 				DA1B0A461AFC5604004E4588 /* Pluto.swift in Sources */,
+				DA1B0A7D1AFC78A3004E4588 /* ZodiacCoords.swift in Sources */,
 				DA1B0A3D1AFC55D3004E4588 /* Saturn.swift in Sources */,
 				DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */,
 				DA1B0A3A1AFC5536004E4588 /* Jupiter.swift in Sources */,
@@ -494,6 +502,7 @@
 				DA1B0A5B1AFC5B47004E4588 /* Moon.swift in Sources */,
 				DA1B0A471AFC5604004E4588 /* Pluto.swift in Sources */,
 				DA1B0A321AFC51D9004E4588 /* SunTest.swift in Sources */,
+				DA1B0A7E1AFC78A3004E4588 /* ZodiacCoords.swift in Sources */,
 				DA1B0A291AFC4B02004E4588 /* Sun.swift in Sources */,
 				DA1B0A671AFC5E13004E4588 /* Y2000DateElements.swift in Sources */,
 				DA1B0A5E1AFC5BA1004E4588 /* EarthMoonBarycenter.swift in Sources */,
@@ -532,6 +541,7 @@
 				DA1B0A351AFC5519004E4588 /* Venus.swift in Sources */,
 				DA1B08271AF6D7E2004E4588 /* UtilitiesTests.swift in Sources */,
 				DA1B0A4D1AFC57B4004E4588 /* JupiterTests.swift in Sources */,
+				DA1B0A801AFC7967004E4588 /* ZodiacCoordsTests.swift in Sources */,
 				DA1B0A411AFC55E2004E4588 /* Uranus.swift in Sources */,
 				DA1B0A3B1AFC5536004E4588 /* Jupiter.swift in Sources */,
 				DA1B0A4F1AFC5832004E4588 /* SaturnTests.swift in Sources */,
