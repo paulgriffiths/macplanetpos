@@ -36,3 +36,11 @@ extension RectangularCoords {
                                radius: sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2)))
     }
 }
+
+public func +(left: RectangularCoords, right: RectangularCoords) -> RectangularCoords {
+    return RectangularCoords(x: left.x + right.x, y: left.y + right.y, z: left.z + right.z)
+}
+
+public func -(left: RectangularCoords, right: RectangularCoords) -> RectangularCoords {
+    return RectangularCoords(x: left.x - right.x, y: left.y - right.y, z: left.z - right.z)
+}

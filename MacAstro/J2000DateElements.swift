@@ -9,7 +9,7 @@
 import Foundation
 
 final class J2000DateElements: DateOrbitalElements {
-    class func newElementsForPlanet(planet: Planet, date: NSDate) -> J2000DateElements {
+    override class func newElementsForPlanet(planet: Planet, date: NSDate) -> J2000DateElements {
         return J2000DateElements(
             epochElems: J2000EpochElements.newElementsForPlanet(planet),
             centuryElems: J2000CenturyElements.newElementsForPlanet(planet),

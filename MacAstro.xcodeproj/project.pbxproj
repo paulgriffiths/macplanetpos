@@ -44,6 +44,40 @@
 		DA1B0A161AFC3BA3004E4588 /* J2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */; };
 		DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */; };
 		DA1B0A191AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */; };
+		DA1B0A1F1AFC424B004E4588 /* PlanetPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A1E1AFC424B004E4588 /* PlanetPosition.swift */; };
+		DA1B0A201AFC424B004E4588 /* PlanetPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A1E1AFC424B004E4588 /* PlanetPosition.swift */; };
+		DA1B0A221AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A211AFC461A004E4588 /* PlanetSolarOrbit.swift */; };
+		DA1B0A231AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A211AFC461A004E4588 /* PlanetSolarOrbit.swift */; };
+		DA1B0A251AFC4A65004E4588 /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A241AFC4A65004E4588 /* Earth.swift */; };
+		DA1B0A261AFC4A65004E4588 /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A241AFC4A65004E4588 /* Earth.swift */; };
+		DA1B0A281AFC4B02004E4588 /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A271AFC4B02004E4588 /* Sun.swift */; };
+		DA1B0A291AFC4B02004E4588 /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A271AFC4B02004E4588 /* Sun.swift */; };
+		DA1B0A2B1AFC4B9C004E4588 /* Mercury.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A2A1AFC4B9C004E4588 /* Mercury.swift */; };
+		DA1B0A2C1AFC4B9C004E4588 /* Mercury.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A2A1AFC4B9C004E4588 /* Mercury.swift */; };
+		DA1B0A2E1AFC4D0B004E4588 /* MercuryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A2D1AFC4D0B004E4588 /* MercuryTest.swift */; };
+		DA1B0A301AFC51CC004E4588 /* EarthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A2F1AFC51CC004E4588 /* EarthTest.swift */; };
+		DA1B0A321AFC51D9004E4588 /* SunTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A311AFC51D9004E4588 /* SunTest.swift */; };
+		DA1B0A341AFC5519004E4588 /* Venus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A331AFC5519004E4588 /* Venus.swift */; };
+		DA1B0A351AFC5519004E4588 /* Venus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A331AFC5519004E4588 /* Venus.swift */; };
+		DA1B0A371AFC5528004E4588 /* Mars.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A361AFC5528004E4588 /* Mars.swift */; };
+		DA1B0A381AFC5528004E4588 /* Mars.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A361AFC5528004E4588 /* Mars.swift */; };
+		DA1B0A3A1AFC5536004E4588 /* Jupiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A391AFC5536004E4588 /* Jupiter.swift */; };
+		DA1B0A3B1AFC5536004E4588 /* Jupiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A391AFC5536004E4588 /* Jupiter.swift */; };
+		DA1B0A3D1AFC55D3004E4588 /* Saturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A3C1AFC55D3004E4588 /* Saturn.swift */; };
+		DA1B0A3E1AFC55D3004E4588 /* Saturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A3C1AFC55D3004E4588 /* Saturn.swift */; };
+		DA1B0A401AFC55E2004E4588 /* Uranus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A3F1AFC55E2004E4588 /* Uranus.swift */; };
+		DA1B0A411AFC55E2004E4588 /* Uranus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A3F1AFC55E2004E4588 /* Uranus.swift */; };
+		DA1B0A431AFC55F2004E4588 /* Neptune.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A421AFC55F2004E4588 /* Neptune.swift */; };
+		DA1B0A441AFC55F2004E4588 /* Neptune.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A421AFC55F2004E4588 /* Neptune.swift */; };
+		DA1B0A461AFC5604004E4588 /* Pluto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A451AFC5604004E4588 /* Pluto.swift */; };
+		DA1B0A471AFC5604004E4588 /* Pluto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A451AFC5604004E4588 /* Pluto.swift */; };
+		DA1B0A491AFC56A5004E4588 /* VenusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A481AFC56A5004E4588 /* VenusTest.swift */; };
+		DA1B0A4B1AFC571A004E4588 /* MarsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A4A1AFC571A004E4588 /* MarsTest.swift */; };
+		DA1B0A4D1AFC57B4004E4588 /* JupiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A4C1AFC57B4004E4588 /* JupiterTests.swift */; };
+		DA1B0A4F1AFC5832004E4588 /* SaturnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A4E1AFC5832004E4588 /* SaturnTests.swift */; };
+		DA1B0A511AFC5892004E4588 /* UranusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A501AFC5892004E4588 /* UranusTests.swift */; };
+		DA1B0A531AFC58FA004E4588 /* NeptuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */; };
+		DA1B0A551AFC5954004E4588 /* PlutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A541AFC5954004E4588 /* PlutoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +118,28 @@
 		DA1B0A111AFC38FC004E4588 /* J2000CenturyElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J2000CenturyElements.swift; sourceTree = "<group>"; };
 		DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J2000DateElements.swift; sourceTree = "<group>"; };
 		DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateOrbitalElements.swift; sourceTree = "<group>"; };
+		DA1B0A1E1AFC424B004E4588 /* PlanetPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetPosition.swift; sourceTree = "<group>"; };
+		DA1B0A211AFC461A004E4588 /* PlanetSolarOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetSolarOrbit.swift; sourceTree = "<group>"; };
+		DA1B0A241AFC4A65004E4588 /* Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
+		DA1B0A271AFC4B02004E4588 /* Sun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
+		DA1B0A2A1AFC4B9C004E4588 /* Mercury.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mercury.swift; sourceTree = "<group>"; };
+		DA1B0A2D1AFC4D0B004E4588 /* MercuryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercuryTest.swift; sourceTree = "<group>"; };
+		DA1B0A2F1AFC51CC004E4588 /* EarthTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthTest.swift; sourceTree = "<group>"; };
+		DA1B0A311AFC51D9004E4588 /* SunTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunTest.swift; sourceTree = "<group>"; };
+		DA1B0A331AFC5519004E4588 /* Venus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venus.swift; sourceTree = "<group>"; };
+		DA1B0A361AFC5528004E4588 /* Mars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mars.swift; sourceTree = "<group>"; };
+		DA1B0A391AFC5536004E4588 /* Jupiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jupiter.swift; sourceTree = "<group>"; };
+		DA1B0A3C1AFC55D3004E4588 /* Saturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saturn.swift; sourceTree = "<group>"; };
+		DA1B0A3F1AFC55E2004E4588 /* Uranus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uranus.swift; sourceTree = "<group>"; };
+		DA1B0A421AFC55F2004E4588 /* Neptune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neptune.swift; sourceTree = "<group>"; };
+		DA1B0A451AFC5604004E4588 /* Pluto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pluto.swift; sourceTree = "<group>"; };
+		DA1B0A481AFC56A5004E4588 /* VenusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusTest.swift; sourceTree = "<group>"; };
+		DA1B0A4A1AFC571A004E4588 /* MarsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsTest.swift; sourceTree = "<group>"; };
+		DA1B0A4C1AFC57B4004E4588 /* JupiterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JupiterTests.swift; sourceTree = "<group>"; };
+		DA1B0A4E1AFC5832004E4588 /* SaturnTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaturnTests.swift; sourceTree = "<group>"; };
+		DA1B0A501AFC5892004E4588 /* UranusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UranusTests.swift; sourceTree = "<group>"; };
+		DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeptuneTests.swift; sourceTree = "<group>"; };
+		DA1B0A541AFC5954004E4588 /* PlutoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +181,9 @@
 		DA1B07FB1AF6CAF2004E4588 /* MacAstro */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A1D1AFC4239004E4588 /* Planet Position */,
+				DA1B0A1C1AFC41F0004E4588 /* Utilities */,
+				DA1B0A1B1AFC41D2004E4588 /* General Data Structures */,
 				DA1B0A1A1AFC3E4B004E4588 /* OrbitalElements */,
 				DA1B08191AF6CB1E004E4588 /* Astro */,
 				DA1B07FE1AF6CAF2004E4588 /* AppDelegate.swift */,
@@ -146,6 +205,16 @@
 		DA1B080C1AF6CAF2004E4588 /* MacAstroTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A541AFC5954004E4588 /* PlutoTests.swift */,
+				DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */,
+				DA1B0A501AFC5892004E4588 /* UranusTests.swift */,
+				DA1B0A4E1AFC5832004E4588 /* SaturnTests.swift */,
+				DA1B0A4C1AFC57B4004E4588 /* JupiterTests.swift */,
+				DA1B0A4A1AFC571A004E4588 /* MarsTest.swift */,
+				DA1B0A481AFC56A5004E4588 /* VenusTest.swift */,
+				DA1B0A311AFC51D9004E4588 /* SunTest.swift */,
+				DA1B0A2F1AFC51CC004E4588 /* EarthTest.swift */,
+				DA1B0A2D1AFC4D0B004E4588 /* MercuryTest.swift */,
 				DA1B08401AF703F9004E4588 /* JulianDateTests.swift */,
 				DA1B08381AF6F4AD004E4588 /* OrbitalElementsTests.swift */,
 				DA1B082D1AF6E4EE004E4588 /* AstroFunctionsTests.swift */,
@@ -168,12 +237,8 @@
 		DA1B08191AF6CB1E004E4588 /* Astro */ = {
 			isa = PBXGroup;
 			children = (
-				DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */,
-				DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */,
-				DA1B08221AF6D337004E4588 /* math_utilities.swift */,
 				DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */,
 				DA1B082F1AF6F048004E4588 /* Planet.swift */,
-				DA1B083A1AF70121004E4588 /* date_utilities.swift */,
 				DA1B083D1AF701FB004E4588 /* JulianDate.swift */,
 			);
 			name = Astro;
@@ -191,6 +256,43 @@
 				DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */,
 			);
 			name = OrbitalElements;
+			sourceTree = "<group>";
+		};
+		DA1B0A1B1AFC41D2004E4588 /* General Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */,
+				DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */,
+			);
+			name = "General Data Structures";
+			sourceTree = "<group>";
+		};
+		DA1B0A1C1AFC41F0004E4588 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B08221AF6D337004E4588 /* math_utilities.swift */,
+				DA1B083A1AF70121004E4588 /* date_utilities.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		DA1B0A1D1AFC4239004E4588 /* Planet Position */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B0A1E1AFC424B004E4588 /* PlanetPosition.swift */,
+				DA1B0A211AFC461A004E4588 /* PlanetSolarOrbit.swift */,
+				DA1B0A241AFC4A65004E4588 /* Earth.swift */,
+				DA1B0A271AFC4B02004E4588 /* Sun.swift */,
+				DA1B0A2A1AFC4B9C004E4588 /* Mercury.swift */,
+				DA1B0A331AFC5519004E4588 /* Venus.swift */,
+				DA1B0A361AFC5528004E4588 /* Mars.swift */,
+				DA1B0A391AFC5536004E4588 /* Jupiter.swift */,
+				DA1B0A3C1AFC55D3004E4588 /* Saturn.swift */,
+				DA1B0A3F1AFC55E2004E4588 /* Uranus.swift */,
+				DA1B0A421AFC55F2004E4588 /* Neptune.swift */,
+				DA1B0A451AFC5604004E4588 /* Pluto.swift */,
+			);
+			name = "Planet Position";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,13 +402,25 @@
 				DA1B0A121AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
 				DA1B07FF1AF6CAF2004E4588 /* AppDelegate.swift in Sources */,
 				DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */,
+				DA1B0A1F1AFC424B004E4588 /* PlanetPosition.swift in Sources */,
 				DA1B0A091AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
+				DA1B0A341AFC5519004E4588 /* Venus.swift in Sources */,
+				DA1B0A221AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */,
+				DA1B0A461AFC5604004E4588 /* Pluto.swift in Sources */,
+				DA1B0A3D1AFC55D3004E4588 /* Saturn.swift in Sources */,
 				DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */,
+				DA1B0A3A1AFC5536004E4588 /* Jupiter.swift in Sources */,
+				DA1B0A431AFC55F2004E4588 /* Neptune.swift in Sources */,
 				DA1B08301AF6F048004E4588 /* Planet.swift in Sources */,
 				DA1B0A151AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
+				DA1B0A281AFC4B02004E4588 /* Sun.swift in Sources */,
+				DA1B0A371AFC5528004E4588 /* Mars.swift in Sources */,
+				DA1B0A251AFC4A65004E4588 /* Earth.swift in Sources */,
 				DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
+				DA1B0A401AFC55E2004E4588 /* Uranus.swift in Sources */,
 				DA1B082B1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
 				DA1B081B1AF6CB99004E4588 /* SphericalCoords.swift in Sources */,
+				DA1B0A2B1AFC4B9C004E4588 /* Mercury.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,21 +430,43 @@
 			files = (
 				DA1B0A0A1AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B083C1AF70121004E4588 /* date_utilities.swift in Sources */,
+				DA1B0A471AFC5604004E4588 /* Pluto.swift in Sources */,
+				DA1B0A321AFC51D9004E4588 /* SunTest.swift in Sources */,
+				DA1B0A291AFC4B02004E4588 /* Sun.swift in Sources */,
+				DA1B0A511AFC5892004E4588 /* UranusTests.swift in Sources */,
+				DA1B0A3E1AFC55D3004E4588 /* Saturn.swift in Sources */,
 				DA1B08291AF6DEB3004E4588 /* RectangularCoordsTests.swift in Sources */,
+				DA1B0A2C1AFC4B9C004E4588 /* Mercury.swift in Sources */,
+				DA1B0A531AFC58FA004E4588 /* NeptuneTests.swift in Sources */,
+				DA1B0A301AFC51CC004E4588 /* EarthTest.swift in Sources */,
 				DA1B082E1AF6E4EE004E4588 /* AstroFunctionsTests.swift in Sources */,
+				DA1B0A261AFC4A65004E4588 /* Earth.swift in Sources */,
+				DA1B0A2E1AFC4D0B004E4588 /* MercuryTest.swift in Sources */,
 				DA1B08391AF6F4AD004E4588 /* OrbitalElementsTests.swift in Sources */,
 				DA1B082C1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
 				DA1B0A161AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
 				DA1B0A101AFC32FF004E4588 /* J2000EpochElements.swift in Sources */,
+				DA1B0A381AFC5528004E4588 /* Mars.swift in Sources */,
 				DA1B083F1AF701FB004E4588 /* JulianDate.swift in Sources */,
 				DA1B08311AF6F048004E4588 /* Planet.swift in Sources */,
+				DA1B0A491AFC56A5004E4588 /* VenusTest.swift in Sources */,
 				DA1B08211AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
 				DA1B0A0D1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */,
+				DA1B0A231AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */,
+				DA1B0A4B1AFC571A004E4588 /* MarsTest.swift in Sources */,
+				DA1B0A441AFC55F2004E4588 /* Neptune.swift in Sources */,
 				DA1B0A191AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
 				DA1B08411AF703F9004E4588 /* JulianDateTests.swift in Sources */,
+				DA1B0A201AFC424B004E4588 /* PlanetPosition.swift in Sources */,
 				DA1B0A131AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
+				DA1B0A351AFC5519004E4588 /* Venus.swift in Sources */,
 				DA1B08271AF6D7E2004E4588 /* UtilitiesTests.swift in Sources */,
+				DA1B0A4D1AFC57B4004E4588 /* JupiterTests.swift in Sources */,
+				DA1B0A411AFC55E2004E4588 /* Uranus.swift in Sources */,
+				DA1B0A3B1AFC5536004E4588 /* Jupiter.swift in Sources */,
+				DA1B0A4F1AFC5832004E4588 /* SaturnTests.swift in Sources */,
 				DA1B081E1AF6CE92004E4588 /* SphericalCoordsTests.swift in Sources */,
+				DA1B0A551AFC5954004E4588 /* PlutoTests.swift in Sources */,
 				DA1B08241AF6D337004E4588 /* math_utilities.swift in Sources */,
 				DA1B08341AF6F18A004E4588 /* OrbitalElements.swift in Sources */,
 				DA1B081C1AF6CB99004E4588 /* SphericalCoords.swift in Sources */,
