@@ -16,7 +16,7 @@ public enum Planet: String {
     case Jupiter = "Jupiter"
     case Saturn = "Saturn"
     case Uranus = "Uranus"
-    case Neptune = "Nepture"
+    case Neptune = "Neptune"
     case Pluto = "Pluto"
     case EMBary = "Earth-Moon Barycenter"
     
