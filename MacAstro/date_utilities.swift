@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 func getUTCDate(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int) -> NSDate? {
     if let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian) {
         let dc: NSDateComponents = NSDateComponents()

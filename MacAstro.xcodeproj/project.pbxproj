@@ -91,6 +91,12 @@
 		DA1B0A661AFC5E13004E4588 /* Y2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */; };
 		DA1B0A671AFC5E13004E4588 /* Y2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */; };
 		DA1B0A691AFC61ED004E4588 /* MoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A681AFC61ED004E4588 /* MoonTests.swift */; };
+		DA1B0A6B1AFC67BB004E4588 /* DMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6A1AFC67BB004E4588 /* DMS.swift */; };
+		DA1B0A6C1AFC67BB004E4588 /* DMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6A1AFC67BB004E4588 /* DMS.swift */; };
+		DA1B0A6E1AFC6D15004E4588 /* DMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6D1AFC6D15004E4588 /* DMSTests.swift */; };
+		DA1B0A701AFC6FC2004E4588 /* HMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */; };
+		DA1B0A711AFC6FC2004E4588 /* HMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */; };
+		DA1B0A731AFC7123004E4588 /* HMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A721AFC7123004E4588 /* HMSTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +166,10 @@
 		DA1B0A621AFC5DAE004E4588 /* Y2000DayElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Y2000DayElements.swift; sourceTree = "<group>"; };
 		DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Y2000DateElements.swift; sourceTree = "<group>"; };
 		DA1B0A681AFC61ED004E4588 /* MoonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonTests.swift; sourceTree = "<group>"; };
+		DA1B0A6A1AFC67BB004E4588 /* DMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMS.swift; sourceTree = "<group>"; };
+		DA1B0A6D1AFC6D15004E4588 /* DMSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSTests.swift; sourceTree = "<group>"; };
+		DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMS.swift; sourceTree = "<group>"; };
+		DA1B0A721AFC7123004E4588 /* HMSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMSTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +235,8 @@
 		DA1B080C1AF6CAF2004E4588 /* MacAstroTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A721AFC7123004E4588 /* HMSTests.swift */,
+				DA1B0A6D1AFC6D15004E4588 /* DMSTests.swift */,
 				DA1B0A681AFC61ED004E4588 /* MoonTests.swift */,
 				DA1B0A541AFC5954004E4588 /* PlutoTests.swift */,
 				DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */,
@@ -287,6 +299,8 @@
 			children = (
 				DA1B081A1AF6CB99004E4588 /* SphericalCoords.swift */,
 				DA1B081F1AF6CFDB004E4588 /* RectangularCoords.swift */,
+				DA1B0A6A1AFC67BB004E4588 /* DMS.swift */,
+				DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */,
 			);
 			name = "General Data Structures";
 			sourceTree = "<group>";
@@ -435,6 +449,7 @@
 				DA1B0A571AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */,
 				DA1B0A091AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B0A341AFC5519004E4588 /* Venus.swift in Sources */,
+				DA1B0A6B1AFC67BB004E4588 /* DMS.swift in Sources */,
 				DA1B0A661AFC5E13004E4588 /* Y2000DateElements.swift in Sources */,
 				DA1B0A221AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */,
 				DA1B0A5A1AFC5B47004E4588 /* Moon.swift in Sources */,
@@ -446,6 +461,7 @@
 				DA1B08301AF6F048004E4588 /* Planet.swift in Sources */,
 				DA1B0A151AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
 				DA1B0A281AFC4B02004E4588 /* Sun.swift in Sources */,
+				DA1B0A701AFC6FC2004E4588 /* HMS.swift in Sources */,
 				DA1B0A371AFC5528004E4588 /* Mars.swift in Sources */,
 				DA1B0A251AFC4A65004E4588 /* Earth.swift in Sources */,
 				DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
@@ -462,9 +478,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1B0A641AFC5DAE004E4588 /* Y2000DayElements.swift in Sources */,
+				DA1B0A6E1AFC6D15004E4588 /* DMSTests.swift in Sources */,
 				DA1B0A611AFC5CDC004E4588 /* Y2000EpochElements.swift in Sources */,
 				DA1B0A0A1AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B083C1AF70121004E4588 /* date_utilities.swift in Sources */,
+				DA1B0A6C1AFC67BB004E4588 /* DMS.swift in Sources */,
 				DA1B0A5B1AFC5B47004E4588 /* Moon.swift in Sources */,
 				DA1B0A471AFC5604004E4588 /* Pluto.swift in Sources */,
 				DA1B0A321AFC51D9004E4588 /* SunTest.swift in Sources */,
@@ -479,6 +497,7 @@
 				DA1B0A301AFC51CC004E4588 /* EarthTest.swift in Sources */,
 				DA1B082E1AF6E4EE004E4588 /* AstroFunctionsTests.swift in Sources */,
 				DA1B0A261AFC4A65004E4588 /* Earth.swift in Sources */,
+				DA1B0A711AFC6FC2004E4588 /* HMS.swift in Sources */,
 				DA1B0A2E1AFC4D0B004E4588 /* MercuryTest.swift in Sources */,
 				DA1B08391AF6F4AD004E4588 /* OrbitalElementsTests.swift in Sources */,
 				DA1B082C1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
@@ -489,6 +508,7 @@
 				DA1B08311AF6F048004E4588 /* Planet.swift in Sources */,
 				DA1B0A491AFC56A5004E4588 /* VenusTest.swift in Sources */,
 				DA1B08211AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
+				DA1B0A731AFC7123004E4588 /* HMSTests.swift in Sources */,
 				DA1B0A0D1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */,
 				DA1B0A581AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */,
 				DA1B0A691AFC61ED004E4588 /* MoonTests.swift in Sources */,

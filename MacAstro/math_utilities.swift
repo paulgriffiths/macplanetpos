@@ -9,11 +9,11 @@
 import Foundation
 import Darwin
 
-public func toDegrees(radians: Double) -> Double {
+func toDegrees(radians: Double) -> Double {
     return radians * 180 / M_PI
 }
 
-public func toRadians(degrees: Double) -> Double {
+func toRadians(degrees: Double) -> Double {
     return degrees * M_PI / 180
 }
 
