@@ -109,8 +109,8 @@ final class J2000EpochElements: PointOrbitalElements {
                 lan: toRadians(110.30393684)
             )
             
-        case .Moon:
-            fatalError("J2000 epoch orbital elements not available for the Moon")
+        case .Moon, .EMBary:
+            fatalError("J2000 epoch orbital elements not available for \(planet.description)")
         }
     }
     

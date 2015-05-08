@@ -23,8 +23,8 @@ class DateOrbitalElements: PointOrbitalElements {
         .Pluto:
             return J2000DateElements.newElementsForPlanet(planet, date: date)
             
-        case .Moon:
-            fatalError("Date elements for Moon not yet supported")
+        case .Moon, .EMBary:
+            return Y2000DateElements.newElementsForPlanet(planet, date: date)
         }
         
     }

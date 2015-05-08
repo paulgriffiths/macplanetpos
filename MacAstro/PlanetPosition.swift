@@ -81,7 +81,10 @@ public class PlanetPosition {
             return Pluto(date: date)
             
         case .Moon:
-            fatalError("Moon not yet implemented for PlanetPosition.getPosition()")
+            return Moon(date: date)
+            
+        case .EMBary:
+            return EarthMoonBarycenter(date: date)
         }
     }
     

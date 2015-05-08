@@ -18,6 +18,7 @@ public enum Planet: String {
     case Uranus = "Uranus"
     case Neptune = "Nepture"
     case Pluto = "Pluto"
+    case EMBary = "Earth-Moon Barycenter"
     
     public var description: String {
         return self.rawValue

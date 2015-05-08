@@ -109,8 +109,8 @@ final class J2000CenturyElements: DeltaOrbitalElements {
                 lan: toRadians(-0.01183482)
             )
             
-        case .Moon:
-            fatalError("J2000 century orbital elements not available for the Moon")
+        case .Moon, .EMBary:
+            fatalError("J2000 century orbital elements not available for \(planet.description)")
         }
     }
 

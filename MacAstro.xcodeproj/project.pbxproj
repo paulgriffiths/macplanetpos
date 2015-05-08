@@ -78,6 +78,19 @@
 		DA1B0A511AFC5892004E4588 /* UranusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A501AFC5892004E4588 /* UranusTests.swift */; };
 		DA1B0A531AFC58FA004E4588 /* NeptuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */; };
 		DA1B0A551AFC5954004E4588 /* PlutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A541AFC5954004E4588 /* PlutoTests.swift */; };
+		DA1B0A571AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A561AFC5B29004E4588 /* PlanetEarthOrbit.swift */; };
+		DA1B0A581AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A561AFC5B29004E4588 /* PlanetEarthOrbit.swift */; };
+		DA1B0A5A1AFC5B47004E4588 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A591AFC5B47004E4588 /* Moon.swift */; };
+		DA1B0A5B1AFC5B47004E4588 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A591AFC5B47004E4588 /* Moon.swift */; };
+		DA1B0A5D1AFC5BA1004E4588 /* EarthMoonBarycenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A5C1AFC5BA1004E4588 /* EarthMoonBarycenter.swift */; };
+		DA1B0A5E1AFC5BA1004E4588 /* EarthMoonBarycenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A5C1AFC5BA1004E4588 /* EarthMoonBarycenter.swift */; };
+		DA1B0A601AFC5CDC004E4588 /* Y2000EpochElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A5F1AFC5CDC004E4588 /* Y2000EpochElements.swift */; };
+		DA1B0A611AFC5CDC004E4588 /* Y2000EpochElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A5F1AFC5CDC004E4588 /* Y2000EpochElements.swift */; };
+		DA1B0A631AFC5DAE004E4588 /* Y2000DayElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A621AFC5DAE004E4588 /* Y2000DayElements.swift */; };
+		DA1B0A641AFC5DAE004E4588 /* Y2000DayElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A621AFC5DAE004E4588 /* Y2000DayElements.swift */; };
+		DA1B0A661AFC5E13004E4588 /* Y2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */; };
+		DA1B0A671AFC5E13004E4588 /* Y2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */; };
+		DA1B0A691AFC61ED004E4588 /* MoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A681AFC61ED004E4588 /* MoonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +153,13 @@
 		DA1B0A501AFC5892004E4588 /* UranusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UranusTests.swift; sourceTree = "<group>"; };
 		DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeptuneTests.swift; sourceTree = "<group>"; };
 		DA1B0A541AFC5954004E4588 /* PlutoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlutoTests.swift; sourceTree = "<group>"; };
+		DA1B0A561AFC5B29004E4588 /* PlanetEarthOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetEarthOrbit.swift; sourceTree = "<group>"; };
+		DA1B0A591AFC5B47004E4588 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		DA1B0A5C1AFC5BA1004E4588 /* EarthMoonBarycenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthMoonBarycenter.swift; sourceTree = "<group>"; };
+		DA1B0A5F1AFC5CDC004E4588 /* Y2000EpochElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Y2000EpochElements.swift; sourceTree = "<group>"; };
+		DA1B0A621AFC5DAE004E4588 /* Y2000DayElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Y2000DayElements.swift; sourceTree = "<group>"; };
+		DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Y2000DateElements.swift; sourceTree = "<group>"; };
+		DA1B0A681AFC61ED004E4588 /* MoonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +225,7 @@
 		DA1B080C1AF6CAF2004E4588 /* MacAstroTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A681AFC61ED004E4588 /* MoonTests.swift */,
 				DA1B0A541AFC5954004E4588 /* PlutoTests.swift */,
 				DA1B0A521AFC58FA004E4588 /* NeptuneTests.swift */,
 				DA1B0A501AFC5892004E4588 /* UranusTests.swift */,
@@ -254,6 +275,9 @@
 				DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */,
 				DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */,
 				DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */,
+				DA1B0A5F1AFC5CDC004E4588 /* Y2000EpochElements.swift */,
+				DA1B0A621AFC5DAE004E4588 /* Y2000DayElements.swift */,
+				DA1B0A651AFC5E12004E4588 /* Y2000DateElements.swift */,
 			);
 			name = OrbitalElements;
 			sourceTree = "<group>";
@@ -291,6 +315,9 @@
 				DA1B0A3F1AFC55E2004E4588 /* Uranus.swift */,
 				DA1B0A421AFC55F2004E4588 /* Neptune.swift */,
 				DA1B0A451AFC5604004E4588 /* Pluto.swift */,
+				DA1B0A561AFC5B29004E4588 /* PlanetEarthOrbit.swift */,
+				DA1B0A591AFC5B47004E4588 /* Moon.swift */,
+				DA1B0A5C1AFC5BA1004E4588 /* EarthMoonBarycenter.swift */,
 			);
 			name = "Planet Position";
 			sourceTree = "<group>";
@@ -400,12 +427,17 @@
 				DA1B0A0F1AFC32FF004E4588 /* J2000EpochElements.swift in Sources */,
 				DA1B08331AF6F18A004E4588 /* OrbitalElements.swift in Sources */,
 				DA1B0A121AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
+				DA1B0A5D1AFC5BA1004E4588 /* EarthMoonBarycenter.swift in Sources */,
+				DA1B0A631AFC5DAE004E4588 /* Y2000DayElements.swift in Sources */,
 				DA1B07FF1AF6CAF2004E4588 /* AppDelegate.swift in Sources */,
 				DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */,
 				DA1B0A1F1AFC424B004E4588 /* PlanetPosition.swift in Sources */,
+				DA1B0A571AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */,
 				DA1B0A091AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B0A341AFC5519004E4588 /* Venus.swift in Sources */,
+				DA1B0A661AFC5E13004E4588 /* Y2000DateElements.swift in Sources */,
 				DA1B0A221AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */,
+				DA1B0A5A1AFC5B47004E4588 /* Moon.swift in Sources */,
 				DA1B0A461AFC5604004E4588 /* Pluto.swift in Sources */,
 				DA1B0A3D1AFC55D3004E4588 /* Saturn.swift in Sources */,
 				DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */,
@@ -419,6 +451,7 @@
 				DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
 				DA1B0A401AFC55E2004E4588 /* Uranus.swift in Sources */,
 				DA1B082B1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
+				DA1B0A601AFC5CDC004E4588 /* Y2000EpochElements.swift in Sources */,
 				DA1B081B1AF6CB99004E4588 /* SphericalCoords.swift in Sources */,
 				DA1B0A2B1AFC4B9C004E4588 /* Mercury.swift in Sources */,
 			);
@@ -428,11 +461,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1B0A641AFC5DAE004E4588 /* Y2000DayElements.swift in Sources */,
+				DA1B0A611AFC5CDC004E4588 /* Y2000EpochElements.swift in Sources */,
 				DA1B0A0A1AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B083C1AF70121004E4588 /* date_utilities.swift in Sources */,
+				DA1B0A5B1AFC5B47004E4588 /* Moon.swift in Sources */,
 				DA1B0A471AFC5604004E4588 /* Pluto.swift in Sources */,
 				DA1B0A321AFC51D9004E4588 /* SunTest.swift in Sources */,
 				DA1B0A291AFC4B02004E4588 /* Sun.swift in Sources */,
+				DA1B0A671AFC5E13004E4588 /* Y2000DateElements.swift in Sources */,
+				DA1B0A5E1AFC5BA1004E4588 /* EarthMoonBarycenter.swift in Sources */,
 				DA1B0A511AFC5892004E4588 /* UranusTests.swift in Sources */,
 				DA1B0A3E1AFC55D3004E4588 /* Saturn.swift in Sources */,
 				DA1B08291AF6DEB3004E4588 /* RectangularCoordsTests.swift in Sources */,
@@ -452,6 +490,8 @@
 				DA1B0A491AFC56A5004E4588 /* VenusTest.swift in Sources */,
 				DA1B08211AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
 				DA1B0A0D1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */,
+				DA1B0A581AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */,
+				DA1B0A691AFC61ED004E4588 /* MoonTests.swift in Sources */,
 				DA1B0A231AFC461A004E4588 /* PlanetSolarOrbit.swift in Sources */,
 				DA1B0A4B1AFC571A004E4588 /* MarsTest.swift in Sources */,
 				DA1B0A441AFC55F2004E4588 /* Neptune.swift in Sources */,
