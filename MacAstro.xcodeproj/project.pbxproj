@@ -97,6 +97,9 @@
 		DA1B0A701AFC6FC2004E4588 /* HMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */; };
 		DA1B0A711AFC6FC2004E4588 /* HMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */; };
 		DA1B0A731AFC7123004E4588 /* HMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A721AFC7123004E4588 /* HMSTests.swift */; };
+		DA1B0A781AFC73EC004E4588 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */; };
+		DA1B0A791AFC73EC004E4588 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */; };
+		DA1B0A7B1AFC7646004E4588 /* ZodiacSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +173,8 @@
 		DA1B0A6D1AFC6D15004E4588 /* DMSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSTests.swift; sourceTree = "<group>"; };
 		DA1B0A6F1AFC6FC2004E4588 /* HMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMS.swift; sourceTree = "<group>"; };
 		DA1B0A721AFC7123004E4588 /* HMSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMSTests.swift; sourceTree = "<group>"; };
+		DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacSign.swift; sourceTree = "<group>"; };
+		DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacSignTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +240,7 @@
 		DA1B080C1AF6CAF2004E4588 /* MacAstroTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */,
 				DA1B0A721AFC7123004E4588 /* HMSTests.swift */,
 				DA1B0A6D1AFC6D15004E4588 /* DMSTests.swift */,
 				DA1B0A681AFC61ED004E4588 /* MoonTests.swift */,
@@ -273,6 +279,7 @@
 				DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */,
 				DA1B082F1AF6F048004E4588 /* Planet.swift */,
 				DA1B083D1AF701FB004E4588 /* JulianDate.swift */,
+				DA1B0A771AFC73EC004E4588 /* ZodiacSign.swift */,
 			);
 			name = Astro;
 			sourceTree = "<group>";
@@ -457,6 +464,7 @@
 				DA1B0A3D1AFC55D3004E4588 /* Saturn.swift in Sources */,
 				DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */,
 				DA1B0A3A1AFC5536004E4588 /* Jupiter.swift in Sources */,
+				DA1B0A781AFC73EC004E4588 /* ZodiacSign.swift in Sources */,
 				DA1B0A431AFC55F2004E4588 /* Neptune.swift in Sources */,
 				DA1B08301AF6F048004E4588 /* Planet.swift in Sources */,
 				DA1B0A151AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
@@ -496,6 +504,7 @@
 				DA1B0A531AFC58FA004E4588 /* NeptuneTests.swift in Sources */,
 				DA1B0A301AFC51CC004E4588 /* EarthTest.swift in Sources */,
 				DA1B082E1AF6E4EE004E4588 /* AstroFunctionsTests.swift in Sources */,
+				DA1B0A7B1AFC7646004E4588 /* ZodiacSignTests.swift in Sources */,
 				DA1B0A261AFC4A65004E4588 /* Earth.swift in Sources */,
 				DA1B0A711AFC6FC2004E4588 /* HMS.swift in Sources */,
 				DA1B0A2E1AFC4D0B004E4588 /* MercuryTest.swift in Sources */,
@@ -517,6 +526,7 @@
 				DA1B0A441AFC55F2004E4588 /* Neptune.swift in Sources */,
 				DA1B0A191AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
 				DA1B08411AF703F9004E4588 /* JulianDateTests.swift in Sources */,
+				DA1B0A791AFC73EC004E4588 /* ZodiacSign.swift in Sources */,
 				DA1B0A201AFC424B004E4588 /* PlanetPosition.swift in Sources */,
 				DA1B0A131AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
 				DA1B0A351AFC5519004E4588 /* Venus.swift in Sources */,
