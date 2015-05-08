@@ -32,6 +32,18 @@
 		DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B083D1AF701FB004E4588 /* JulianDate.swift */; };
 		DA1B083F1AF701FB004E4588 /* JulianDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B083D1AF701FB004E4588 /* JulianDate.swift */; };
 		DA1B08411AF703F9004E4588 /* JulianDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B08401AF703F9004E4588 /* JulianDateTests.swift */; };
+		DA1B0A091AFC323F004E4588 /* PointOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A081AFC323F004E4588 /* PointOrbitalElements.swift */; };
+		DA1B0A0A1AFC323F004E4588 /* PointOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A081AFC323F004E4588 /* PointOrbitalElements.swift */; };
+		DA1B0A0C1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A0B1AFC3295004E4588 /* DeltaOrbitalElements.swift */; };
+		DA1B0A0D1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A0B1AFC3295004E4588 /* DeltaOrbitalElements.swift */; };
+		DA1B0A0F1AFC32FF004E4588 /* J2000EpochElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A0E1AFC32FF004E4588 /* J2000EpochElements.swift */; };
+		DA1B0A101AFC32FF004E4588 /* J2000EpochElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A0E1AFC32FF004E4588 /* J2000EpochElements.swift */; };
+		DA1B0A121AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A111AFC38FC004E4588 /* J2000CenturyElements.swift */; };
+		DA1B0A131AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A111AFC38FC004E4588 /* J2000CenturyElements.swift */; };
+		DA1B0A151AFC3BA3004E4588 /* J2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */; };
+		DA1B0A161AFC3BA3004E4588 /* J2000DateElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */; };
+		DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */; };
+		DA1B0A191AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +78,12 @@
 		DA1B083A1AF70121004E4588 /* date_utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = date_utilities.swift; sourceTree = "<group>"; };
 		DA1B083D1AF701FB004E4588 /* JulianDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JulianDate.swift; sourceTree = "<group>"; };
 		DA1B08401AF703F9004E4588 /* JulianDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JulianDateTests.swift; sourceTree = "<group>"; };
+		DA1B0A081AFC323F004E4588 /* PointOrbitalElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointOrbitalElements.swift; sourceTree = "<group>"; };
+		DA1B0A0B1AFC3295004E4588 /* DeltaOrbitalElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeltaOrbitalElements.swift; sourceTree = "<group>"; };
+		DA1B0A0E1AFC32FF004E4588 /* J2000EpochElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J2000EpochElements.swift; sourceTree = "<group>"; };
+		DA1B0A111AFC38FC004E4588 /* J2000CenturyElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J2000CenturyElements.swift; sourceTree = "<group>"; };
+		DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J2000DateElements.swift; sourceTree = "<group>"; };
+		DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateOrbitalElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +125,7 @@
 		DA1B07FB1AF6CAF2004E4588 /* MacAstro */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A1A1AFC3E4B004E4588 /* OrbitalElements */,
 				DA1B08191AF6CB1E004E4588 /* Astro */,
 				DA1B07FE1AF6CAF2004E4588 /* AppDelegate.swift */,
 				DA1B08001AF6CAF2004E4588 /* Images.xcassets */,
@@ -154,11 +173,24 @@
 				DA1B08221AF6D337004E4588 /* math_utilities.swift */,
 				DA1B082A1AF6E3A0004E4588 /* AstroFunctions.swift */,
 				DA1B082F1AF6F048004E4588 /* Planet.swift */,
-				DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */,
 				DA1B083A1AF70121004E4588 /* date_utilities.swift */,
 				DA1B083D1AF701FB004E4588 /* JulianDate.swift */,
 			);
 			name = Astro;
+			sourceTree = "<group>";
+		};
+		DA1B0A1A1AFC3E4B004E4588 /* OrbitalElements */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B0A081AFC323F004E4588 /* PointOrbitalElements.swift */,
+				DA1B0A0B1AFC3295004E4588 /* DeltaOrbitalElements.swift */,
+				DA1B0A0E1AFC32FF004E4588 /* J2000EpochElements.swift */,
+				DA1B0A111AFC38FC004E4588 /* J2000CenturyElements.swift */,
+				DA1B0A141AFC3BA3004E4588 /* J2000DateElements.swift */,
+				DA1B08321AF6F18A004E4588 /* OrbitalElements.swift */,
+				DA1B0A171AFC3C78004E4588 /* DateOrbitalElements.swift */,
+			);
+			name = OrbitalElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,12 +293,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1B083B1AF70121004E4588 /* date_utilities.swift in Sources */,
+				DA1B0A0C1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */,
 				DA1B08201AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
+				DA1B0A0F1AFC32FF004E4588 /* J2000EpochElements.swift in Sources */,
 				DA1B08331AF6F18A004E4588 /* OrbitalElements.swift in Sources */,
+				DA1B0A121AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
 				DA1B07FF1AF6CAF2004E4588 /* AppDelegate.swift in Sources */,
 				DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */,
+				DA1B0A091AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B08231AF6D337004E4588 /* math_utilities.swift in Sources */,
 				DA1B08301AF6F048004E4588 /* Planet.swift in Sources */,
+				DA1B0A151AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
+				DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
 				DA1B082B1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
 				DA1B081B1AF6CB99004E4588 /* SphericalCoords.swift in Sources */,
 			);
@@ -276,15 +314,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1B0A0A1AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
 				DA1B083C1AF70121004E4588 /* date_utilities.swift in Sources */,
 				DA1B08291AF6DEB3004E4588 /* RectangularCoordsTests.swift in Sources */,
 				DA1B082E1AF6E4EE004E4588 /* AstroFunctionsTests.swift in Sources */,
 				DA1B08391AF6F4AD004E4588 /* OrbitalElementsTests.swift in Sources */,
 				DA1B082C1AF6E3A0004E4588 /* AstroFunctions.swift in Sources */,
+				DA1B0A161AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
+				DA1B0A101AFC32FF004E4588 /* J2000EpochElements.swift in Sources */,
 				DA1B083F1AF701FB004E4588 /* JulianDate.swift in Sources */,
 				DA1B08311AF6F048004E4588 /* Planet.swift in Sources */,
 				DA1B08211AF6CFDB004E4588 /* RectangularCoords.swift in Sources */,
+				DA1B0A0D1AFC3295004E4588 /* DeltaOrbitalElements.swift in Sources */,
+				DA1B0A191AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
 				DA1B08411AF703F9004E4588 /* JulianDateTests.swift in Sources */,
+				DA1B0A131AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
 				DA1B08271AF6D7E2004E4588 /* UtilitiesTests.swift in Sources */,
 				DA1B081E1AF6CE92004E4588 /* SphericalCoordsTests.swift in Sources */,
 				DA1B08241AF6D337004E4588 /* math_utilities.swift in Sources */,
@@ -472,6 +516,7 @@
 				DA1B08151AF6CAF2004E4588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1B08161AF6CAF2004E4588 /* Build configuration list for PBXNativeTarget "MacAstroTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +525,7 @@
 				DA1B08181AF6CAF2004E4588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
