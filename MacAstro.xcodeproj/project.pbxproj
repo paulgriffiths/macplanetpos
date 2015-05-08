@@ -103,6 +103,10 @@
 		DA1B0A7D1AFC78A3004E4588 /* ZodiacCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */; };
 		DA1B0A7E1AFC78A3004E4588 /* ZodiacCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */; };
 		DA1B0A801AFC7967004E4588 /* ZodiacCoordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A7F1AFC7967004E4588 /* ZodiacCoordsTests.swift */; };
+		DA1B0A841AFC7D38004E4588 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A821AFC7D38004E4588 /* MainWindowController.swift */; };
+		DA1B0A851AFC7D38004E4588 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1B0A831AFC7D38004E4588 /* MainWindowController.xib */; };
+		DA1B0A871AFC7E67004E4588 /* PlanetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A861AFC7E67004E4588 /* PlanetData.swift */; };
+		DA1B0A891AFC7EE1004E4588 /* PlanetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A881AFC7EE1004E4588 /* PlanetInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +184,10 @@
 		DA1B0A7A1AFC7646004E4588 /* ZodiacSignTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacSignTests.swift; sourceTree = "<group>"; };
 		DA1B0A7C1AFC78A3004E4588 /* ZodiacCoords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacCoords.swift; sourceTree = "<group>"; };
 		DA1B0A7F1AFC7967004E4588 /* ZodiacCoordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZodiacCoordsTests.swift; sourceTree = "<group>"; };
+		DA1B0A821AFC7D38004E4588 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		DA1B0A831AFC7D38004E4588 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		DA1B0A861AFC7E67004E4588 /* PlanetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetData.swift; sourceTree = "<group>"; };
+		DA1B0A881AFC7EE1004E4588 /* PlanetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +229,7 @@
 		DA1B07FB1AF6CAF2004E4588 /* MacAstro */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B0A811AFC7D1A004E4588 /* App */,
 				DA1B0A1D1AFC4239004E4588 /* Planet Position */,
 				DA1B0A1C1AFC41F0004E4588 /* Utilities */,
 				DA1B0A1B1AFC41D2004E4588 /* General Data Structures */,
@@ -350,6 +359,17 @@
 			name = "Planet Position";
 			sourceTree = "<group>";
 		};
+		DA1B0A811AFC7D1A004E4588 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B0A821AFC7D38004E4588 /* MainWindowController.swift */,
+				DA1B0A831AFC7D38004E4588 /* MainWindowController.xib */,
+				DA1B0A861AFC7E67004E4588 /* PlanetData.swift */,
+				DA1B0A881AFC7EE1004E4588 /* PlanetInfo.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1B08011AF6CAF2004E4588 /* Images.xcassets in Resources */,
+				DA1B0A851AFC7D38004E4588 /* MainWindowController.xib in Resources */,
 				DA1B08041AF6CAF2004E4588 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,10 +476,12 @@
 				DA1B0A0F1AFC32FF004E4588 /* J2000EpochElements.swift in Sources */,
 				DA1B08331AF6F18A004E4588 /* OrbitalElements.swift in Sources */,
 				DA1B0A121AFC38FC004E4588 /* J2000CenturyElements.swift in Sources */,
+				DA1B0A841AFC7D38004E4588 /* MainWindowController.swift in Sources */,
 				DA1B0A5D1AFC5BA1004E4588 /* EarthMoonBarycenter.swift in Sources */,
 				DA1B0A631AFC5DAE004E4588 /* Y2000DayElements.swift in Sources */,
 				DA1B07FF1AF6CAF2004E4588 /* AppDelegate.swift in Sources */,
 				DA1B083E1AF701FB004E4588 /* JulianDate.swift in Sources */,
+				DA1B0A891AFC7EE1004E4588 /* PlanetInfo.swift in Sources */,
 				DA1B0A1F1AFC424B004E4588 /* PlanetPosition.swift in Sources */,
 				DA1B0A571AFC5B29004E4588 /* PlanetEarthOrbit.swift in Sources */,
 				DA1B0A091AFC323F004E4588 /* PointOrbitalElements.swift in Sources */,
@@ -477,6 +500,7 @@
 				DA1B08301AF6F048004E4588 /* Planet.swift in Sources */,
 				DA1B0A151AFC3BA3004E4588 /* J2000DateElements.swift in Sources */,
 				DA1B0A281AFC4B02004E4588 /* Sun.swift in Sources */,
+				DA1B0A871AFC7E67004E4588 /* PlanetData.swift in Sources */,
 				DA1B0A701AFC6FC2004E4588 /* HMS.swift in Sources */,
 				DA1B0A371AFC5528004E4588 /* Mars.swift in Sources */,
 				DA1B0A251AFC4A65004E4588 /* Earth.swift in Sources */,

@@ -48,6 +48,10 @@ public class PlanetPosition {
         return geoEquCoords.toSpherical().distance
     }
     
+    public class func getPosition(planet: Planet) -> PlanetPosition {
+        return PlanetPosition.getPosition(planet, date: NSDate())
+    }
+    
     public class func getPosition(planet: Planet, date: NSDate) -> PlanetPosition {
         switch planet {
         case .Mercury:
