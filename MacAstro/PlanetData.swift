@@ -8,11 +8,10 @@
 
 import Cocoa
 
-private let planets: [Planet] = [.Moon, .Sun, .Mercury, .Venus, .Mars, .Jupiter, .Saturn, .Uranus, .Neptune, .Pluto]
-
 class PlanetData: NSObject, NSTableViewDataSource {
     private var planetArray: [PlanetInfo] = []
     private var lastUpdatedString: String = ""
+    private let planets: [Planet] = [.Moon, .Sun, .Mercury, .Venus, .Mars, .Jupiter, .Saturn, .Uranus, .Neptune, .Pluto]
     
     var lastUpdated: String {
         return lastUpdatedString

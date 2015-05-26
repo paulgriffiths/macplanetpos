@@ -8,11 +8,32 @@
 
 import Cocoa
 
+private var refreshSeconds = 5.0
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
+    @IBOutlet weak var refreshMenuItem: NSMenuItem?
+    private weak var timer: NSTimer?
     var mainWindowController: MainWindowController?
 
+    private var timerActive = false {
+        didSet {
+            if let refreshMenuItem = refreshMenuItem {
+                refreshMenuItem.state = timerActive ? NSOnState : NSOffState
+            }
+            
+            if timerActive {
+                timer = NSTimer.scheduledTimerWithTimeInterval(refreshSeconds, target: self,
+                    selector: Selector("timerFired:"), userInfo: nil, repeats: true)
+            }
+            else {
+                invalidateTimer()
+            }
+        }
+    }
+    
+    //  MARK: - NSApplicationDelegate methods
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
@@ -20,13 +41,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+        invalidateTimer()
     }
 
-    //  Terminate the app by the red button
-    
-    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
         return true
+    }
+    
+    //  MARK: - Action methods
+    
+    @IBAction func refreshMenuItemSelected(sender: NSMenuItem) {
+        timerActive = !timerActive
+    }
+    
+    //  MARK: - Helper methods
+    
+    func timerFired(sender: NSTimer) {
+        mainWindowController?.updateData()
+    }
+    
+    private func invalidateTimer() {
+        if let timer = timer {
+            timer.invalidate()
+        }
+        timer = nil
     }
 }
 

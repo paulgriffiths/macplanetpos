@@ -28,11 +28,15 @@ class MainWindowController: NSWindowController {
         }
     }
     
-    @IBAction func refreshData(sender: NSButton) {
+    func updateData() {
         if let data = planetData, let table = tableView {
             data.refresh()
             updateRefreshTime()
             table.reloadData()
         }
+    }
+    
+    @IBAction func refreshData(sender: NSButton) {
+        updateData()
     }
 }
