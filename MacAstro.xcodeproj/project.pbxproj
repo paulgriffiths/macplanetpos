@@ -107,6 +107,7 @@
 		DA1B0A851AFC7D38004E4588 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1B0A831AFC7D38004E4588 /* MainWindowController.xib */; };
 		DA1B0A871AFC7E67004E4588 /* PlanetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A861AFC7E67004E4588 /* PlanetData.swift */; };
 		DA1B0A891AFC7EE1004E4588 /* PlanetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B0A881AFC7EE1004E4588 /* PlanetInfo.swift */; };
+		DA65D1F21B1533A500192DAE /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA65D1F11B1533A500192DAE /* PreferenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,7 @@
 		DA1B0A831AFC7D38004E4588 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		DA1B0A861AFC7E67004E4588 /* PlanetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetData.swift; sourceTree = "<group>"; };
 		DA1B0A881AFC7EE1004E4588 /* PlanetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetInfo.swift; sourceTree = "<group>"; };
+		DA65D1F11B1533A500192DAE /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +368,7 @@
 				DA1B0A831AFC7D38004E4588 /* MainWindowController.xib */,
 				DA1B0A861AFC7E67004E4588 /* PlanetData.swift */,
 				DA1B0A881AFC7EE1004E4588 /* PlanetInfo.swift */,
+				DA65D1F11B1533A500192DAE /* PreferenceManager.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				DA1B0A871AFC7E67004E4588 /* PlanetData.swift in Sources */,
 				DA1B0A701AFC6FC2004E4588 /* HMS.swift in Sources */,
 				DA1B0A371AFC5528004E4588 /* Mars.swift in Sources */,
+				DA65D1F21B1533A500192DAE /* PreferenceManager.swift in Sources */,
 				DA1B0A251AFC4A65004E4588 /* Earth.swift in Sources */,
 				DA1B0A181AFC3C78004E4588 /* DateOrbitalElements.swift in Sources */,
 				DA1B0A401AFC55E2004E4588 /* Uranus.swift in Sources */,

@@ -15,9 +15,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var refreshMenuItem: NSMenuItem?
     private weak var timer: NSTimer?
     var mainWindowController: MainWindowController?
+    private let preferenceManager = PreferenceManager()
 
     private var timerActive = false {
         didSet {
+            preferenceManager.autorefresh = timerActive
+            
             if let refreshMenuItem = refreshMenuItem {
                 refreshMenuItem.state = timerActive ? NSOnState : NSOffState
             }
@@ -38,6 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
         self.mainWindowController = mainWindowController
+        timerActive = preferenceManager.autorefresh
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
