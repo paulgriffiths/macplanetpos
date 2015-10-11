@@ -23,7 +23,7 @@ class HMSTests: XCTestCase {
     
     func testInitializeZero() {
         let hms = HMS(degrees: 0.0)
-        XCTAssertEqualWithAccuracy(0.0, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(0.0, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(0, hms.hours)
         XCTAssertEqual(0, hms.minutes)
         XCTAssertEqual(0, hms.seconds)
@@ -31,7 +31,7 @@ class HMSTests: XCTestCase {
     
     func testInitializePositiveWhole() {
         let hms = HMS(degrees: 100.0)
-        XCTAssertEqualWithAccuracy(100.0, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(100.0, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(6, hms.hours)
         XCTAssertEqual(40, hms.minutes)
         XCTAssertEqual(0, hms.seconds)
@@ -39,7 +39,7 @@ class HMSTests: XCTestCase {
 
     func testInitializeNegativeWhole() {
         let hms = HMS(degrees: -100.0)
-        XCTAssertEqualWithAccuracy(260.0, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(260.0, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(17, hms.hours)
         XCTAssertEqual(20, hms.minutes)
         XCTAssertEqual(0, hms.seconds)
@@ -47,7 +47,7 @@ class HMSTests: XCTestCase {
 
     func testInitializePositiveFractional() {
         let hms = HMS(degrees: 107.4)
-        XCTAssertEqualWithAccuracy(107.4, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(107.4, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(7, hms.hours)
         XCTAssertEqual(9, hms.minutes)
         XCTAssertEqual(36, hms.seconds)
@@ -55,7 +55,7 @@ class HMSTests: XCTestCase {
     
     func testInitializeNegativeFractional() {
         let hms = HMS(degrees: -107.4)
-        XCTAssertEqualWithAccuracy(252.6, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(252.6, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(16, hms.hours)
         XCTAssertEqual(50, hms.minutes)
         XCTAssertEqual(24, hms.seconds)
@@ -63,7 +63,7 @@ class HMSTests: XCTestCase {
     
     func testInitializePositive360() {
         let hms = HMS(degrees: 360.0)
-        XCTAssertEqualWithAccuracy(0.0, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(0.0, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(0, hms.hours)
         XCTAssertEqual(0, hms.minutes)
         XCTAssertEqual(0, hms.seconds)
@@ -71,7 +71,7 @@ class HMSTests: XCTestCase {
     
     func testInitializeNegative360() {
         let hms = HMS(degrees: -360.0)
-        XCTAssertEqualWithAccuracy(0.0, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(0.0, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(0, hms.hours)
         XCTAssertEqual(0, hms.minutes)
         XCTAssertEqual(0, hms.seconds)
@@ -79,7 +79,7 @@ class HMSTests: XCTestCase {
 
     func testInitializePositiveGreaterThan360() {
         let hms = HMS(degrees: 389.62)
-        XCTAssertEqualWithAccuracy(29.62, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(29.62, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(1, hms.hours)
         XCTAssertEqual(58, hms.minutes)
         XCTAssertEqual(29, hms.seconds)
@@ -87,7 +87,7 @@ class HMSTests: XCTestCase {
     
     func testInitializeNegativeGreatherThan360() {
         let hms = HMS(degrees: -389.62)
-        XCTAssertEqualWithAccuracy(330.38, hms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(330.38, hms.degrees, accuracy: 0.000001)
         XCTAssertEqual(22, hms.hours)
         XCTAssertEqual(1, hms.minutes)
         XCTAssertEqual(31, hms.seconds)

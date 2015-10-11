@@ -25,32 +25,32 @@ class AstroFunctionsTests: XCTestCase {
 
     func testKepler() {
         var expected = toRadians(37.40006)
-        var result = kepler(toRadians(20), 0.5)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        var result = kepler(toRadians(20), ecc: 0.5)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
         
         expected = toRadians(48.43418)
-        result = kepler(toRadians(27), 0.5)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        result = kepler(toRadians(27), ecc: 0.5)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
         
         expected = toRadians(226.66512)
-        result = kepler(toRadians(235), 0.2)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        result = kepler(toRadians(235), ecc: 0.2)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
         
         expected = toRadians(0)
-        result = kepler(toRadians(0), 0)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        result = kepler(toRadians(0), ecc: 0)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
         
         expected = toRadians(360)
-        result = kepler(toRadians(360), 0)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        result = kepler(toRadians(360), ecc: 0)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
         
         expected = toRadians(300)
-        result = kepler(toRadians(300), 0)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        result = kepler(toRadians(300), ecc: 0)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
         
         expected = toRadians(96.25884)
-        result = kepler(toRadians(45), 0.9)
-        XCTAssertEqualWithAccuracy(expected, result, accuracy)
+        result = kepler(toRadians(45), ecc: 0.9)
+        XCTAssertEqualWithAccuracy(expected, result, accuracy: accuracy)
     }
 
 }

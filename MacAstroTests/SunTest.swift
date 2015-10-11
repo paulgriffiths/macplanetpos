@@ -22,11 +22,11 @@ class SunTest: XCTestCase {
     }
 
     func testSun() {
-        if let date = getUTCDate(2013, 6, 4, 1, 15, 0) {
+        if let date = getUTCDate(2013, month: 6, day: 4, hour: 1, minute: 15, second: 0) {
             let pos = PlanetPosition.getPosition(.Sun, date: date)
-            XCTAssertEqualWithAccuracy(72.0135416666667, normalizeDegrees(pos.rightAscension), 0.01)
-            XCTAssertEqualWithAccuracy(22.4078888888889, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(1.01447036664534, pos.distance, 0.0001);
+            XCTAssertEqualWithAccuracy(72.0135416666667, normalizeDegrees(pos.rightAscension), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(22.4078888888889, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(1.01447036664534, pos.distance, accuracy: 0.0001);
         }
         else {
             XCTFail("couldn't get date")

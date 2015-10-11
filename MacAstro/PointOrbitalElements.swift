@@ -16,7 +16,7 @@ class PointOrbitalElements: OrbitalElements {
 
 extension PointOrbitalElements {
     func helioOrbCoords() -> RectangularCoords {
-        let eAnom = kepler(man, ecc)
+        let eAnom = kepler(man, ecc: ecc)
         let x = sma * (cos(eAnom) - ecc)
         let y = sma * sqrt(1 - pow(ecc, 2)) * sin(eAnom)
         return RectangularCoords(x: x, y: y, z: hypot(x, y))

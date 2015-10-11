@@ -28,9 +28,7 @@ func getUTCDate(year: Int, month: Int, day: Int, hour: Int, minute: Int, second:
 func getUTCComponentsFromDate(date: NSDate) -> NSDateComponents? {
     if let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian) {
         cal.timeZone = NSTimeZone(name: "UTC")!
-        let cu : NSCalendarUnit = NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth |
-            NSCalendarUnit.CalendarUnitDay | NSCalendarUnit.CalendarUnitHour |
-            NSCalendarUnit.CalendarUnitMinute | NSCalendarUnit.CalendarUnitSecond
+        let cu : NSCalendarUnit = [NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second]
         return cal.components(cu, fromDate: date)
     }
     else {

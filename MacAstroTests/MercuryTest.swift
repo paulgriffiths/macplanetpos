@@ -22,11 +22,11 @@ class MercuryTest: XCTestCase {
     }
 
     func testMercury() {
-        if let date = getUTCDate(1980, 5, 5, 20, 23, 0) {
+        if let date = getUTCDate(1980, month: 5, day: 5, hour: 20, minute: 23, second: 0) {
             let pos = PlanetPosition.getPosition(.Mercury, date: date)
-            XCTAssertEqualWithAccuracy(35.0765, normalizeDegrees(pos.rightAscension), 0.1)
-            XCTAssertEqualWithAccuracy(12.7926666666667, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(1.30377991344909, pos.distance, 0.0001);
+            XCTAssertEqualWithAccuracy(35.0765, normalizeDegrees(pos.rightAscension), accuracy: 0.1)
+            XCTAssertEqualWithAccuracy(12.7926666666667, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(1.30377991344909, pos.distance, accuracy: 0.0001);
         }
         else {
             XCTFail("couldn't get date")

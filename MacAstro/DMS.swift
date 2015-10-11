@@ -16,19 +16,19 @@ private func signum(number: Double) -> Int {
     return number < 0 ? -1 : 1
 }
 
-private func toSeconds(#degrees: Int) -> Int {
+private func toSeconds(degrees degrees: Int) -> Int {
     return degrees * SECS_IN_A_DEG
 }
 
-private func toSeconds(#minutes: Int) -> Int {
+private func toSeconds(minutes minutes: Int) -> Int {
     return minutes * SECS_IN_A_MIN
 }
 
-private func toMinutes(#seconds: Int) -> Int {
+private func toMinutes(seconds seconds: Int) -> Int {
     return seconds / SECS_IN_A_MIN
 }
 
-private func toDegrees(#seconds: Int) -> Int {
+private func toDegrees(seconds seconds: Int) -> Int {
     return seconds / SECS_IN_A_DEG
 }
 

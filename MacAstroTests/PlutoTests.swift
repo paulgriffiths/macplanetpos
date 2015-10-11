@@ -22,11 +22,11 @@ class PlutoTests: XCTestCase {
     }
 
     func testPluto() {
-        if let date = getUTCDate(2001, 9, 11, 14, 0, 0) {
+        if let date = getUTCDate(2001, month: 9, day: 11, hour: 14, minute: 0, second: 0) {
             let pos = PlanetPosition.getPosition(.Pluto, date: date)
-            XCTAssertEqualWithAccuracy(252.494583333333, normalizeDegrees(pos.rightAscension), 0.01)
-            XCTAssertEqualWithAccuracy(360 - 12.1994722222222, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(30.5130260187628, pos.distance, 0.01);
+            XCTAssertEqualWithAccuracy(252.494583333333, normalizeDegrees(pos.rightAscension), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(360 - 12.1994722222222, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(30.5130260187628, pos.distance, accuracy: 0.01);
         }
         else {
             XCTFail("couldn't get date")

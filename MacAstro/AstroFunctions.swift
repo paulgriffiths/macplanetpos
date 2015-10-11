@@ -16,7 +16,7 @@ public func kepler(mAnom: Double, ecc: Double) -> Double {
     var eAnom = mAnom
     var diff : Double
     
-    do {
+    repeat {
         diff = eAnom - ecc * sin(eAnom) - mAnom
         eAnom -= diff / (1 - ecc * cos(eAnom))
     } while ( abs(diff) > desiredAccuracy )

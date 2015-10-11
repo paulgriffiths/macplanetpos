@@ -22,11 +22,11 @@ class JupiterTests: XCTestCase {
     }
 
     func testJupiter() {
-        if let date = getUTCDate(1991, 6, 17, 0, 0, 0) {
+        if let date = getUTCDate(1991, month: 6, day: 17, hour: 0, minute: 0, second: 0) {
             let pos = PlanetPosition.getPosition(.Jupiter, date: date)
-            XCTAssertEqualWithAccuracy(134.511875, normalizeDegrees(pos.rightAscension), 0.01)
-            XCTAssertEqualWithAccuracy(17.9471666666667, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(5.9852047799159, pos.distance, 0.01);
+            XCTAssertEqualWithAccuracy(134.511875, normalizeDegrees(pos.rightAscension), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(17.9471666666667, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(5.9852047799159, pos.distance, accuracy: 0.01);
         }
         else {
             XCTFail("couldn't get date")

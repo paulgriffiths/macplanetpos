@@ -27,7 +27,7 @@ class PreferenceManager {
     }
     
     func registerDefaultPreferences() {
-        let defaults: [NSObject: AnyObject] = [autorefreshKey: false]
+        let defaults: [String: AnyObject] = [autorefreshKey: false]
         userDefaults.registerDefaults(defaults)
     }
 }

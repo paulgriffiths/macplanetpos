@@ -22,11 +22,11 @@ class MarsTest: XCTestCase {
     }
 
     func testMars() {
-        if let date = getUTCDate(1997, 6, 21, 0, 0, 0) {
+        if let date = getUTCDate(1997, month: 6, day: 21, hour: 0, minute: 0, second: 0) {
             let pos = PlanetPosition.getPosition(.Mars, date: date)
-            XCTAssertEqualWithAccuracy(180.840541666667, normalizeDegrees(pos.rightAscension), 0.01)
-            XCTAssertEqualWithAccuracy(0.03566666666667, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(1.18174124286972, pos.distance, 0.0001);
+            XCTAssertEqualWithAccuracy(180.840541666667, normalizeDegrees(pos.rightAscension), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(0.03566666666667, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(1.18174124286972, pos.distance, accuracy: 0.0001);
         }
         else {
             XCTFail("couldn't get date")

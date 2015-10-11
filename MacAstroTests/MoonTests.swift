@@ -22,10 +22,10 @@ class MoonTests: XCTestCase {
     }
 
     func testMoon() {
-        if let date = getUTCDate(1988, 8, 10, 0, 0, 0) {
+        if let date = getUTCDate(1988, month: 8, day: 10, hour: 0, minute: 0, second: 0) {
             let pos = PlanetPosition.getPosition(.Moon, date: date)
-            XCTAssertEqualWithAccuracy(112.130708333333, normalizeDegrees(pos.rightAscension), 0.3)
-            XCTAssertEqualWithAccuracy(26.1949444444444, normalizeDegrees(pos.declination), 0.1)
+            XCTAssertEqualWithAccuracy(112.130708333333, normalizeDegrees(pos.rightAscension), accuracy: 0.3)
+            XCTAssertEqualWithAccuracy(26.1949444444444, normalizeDegrees(pos.declination), accuracy: 0.1)
         }
         else {
             XCTFail("couldn't get date")

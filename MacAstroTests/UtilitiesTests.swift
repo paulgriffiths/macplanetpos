@@ -28,19 +28,19 @@ class UtilitiesTests: XCTestCase {
         XCTAssertEqual(0.0, result)
         
         result = toRadians(90)
-        XCTAssertEqualWithAccuracy(M_PI / 2, result, accuracy)
+        XCTAssertEqualWithAccuracy(M_PI / 2, result, accuracy: accuracy)
         
         result = toRadians(180)
-        XCTAssertEqualWithAccuracy(M_PI, result, accuracy)
+        XCTAssertEqualWithAccuracy(M_PI, result, accuracy: accuracy)
         
         result = toRadians(270)
-        XCTAssertEqualWithAccuracy(M_PI / 2 * 3, result, accuracy)
+        XCTAssertEqualWithAccuracy(M_PI / 2 * 3, result, accuracy: accuracy)
         
         result = toRadians(360)
-        XCTAssertEqualWithAccuracy(M_PI * 2, result, accuracy)
+        XCTAssertEqualWithAccuracy(M_PI * 2, result, accuracy: accuracy)
         
         result = toRadians(450)
-        XCTAssertEqualWithAccuracy(M_PI * 5 / 2, result, accuracy)
+        XCTAssertEqualWithAccuracy(M_PI * 5 / 2, result, accuracy: accuracy)
     }
     
     func testToDegrees() {
@@ -48,46 +48,46 @@ class UtilitiesTests: XCTestCase {
         XCTAssertEqual(0.0, result)
         
         result = toDegrees(M_PI / 2)
-        XCTAssertEqualWithAccuracy(90.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(90.0, result, accuracy: accuracy)
         
         result = toDegrees(M_PI)
-        XCTAssertEqualWithAccuracy(180.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(180.0, result, accuracy: accuracy)
         
         result = toDegrees(M_PI / 2 * 3)
-        XCTAssertEqualWithAccuracy(270.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(270.0, result, accuracy: accuracy)
         
         result = toDegrees(M_PI * 2)
-        XCTAssertEqualWithAccuracy(360.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(360.0, result, accuracy: accuracy)
         
         result = toDegrees(M_PI * 5 / 2)
-        XCTAssertEqualWithAccuracy(450.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(450.0, result, accuracy: accuracy)
     }
     
     func testNormalizeDegrees() {
         var result = normalizeDegrees(50);
-        XCTAssertEqualWithAccuracy(50.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(50.0, result, accuracy: accuracy)
         
         result = normalizeDegrees(400);
-        XCTAssertEqualWithAccuracy(40.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(40.0, result, accuracy: accuracy)
         
         result = normalizeDegrees(-60);
-        XCTAssertEqualWithAccuracy(300.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(300.0, result, accuracy: accuracy)
         
         result = normalizeDegrees(-460);
-        XCTAssertEqualWithAccuracy(260.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(260.0, result, accuracy: accuracy)
         
         result = normalizeDegrees(500);
-        XCTAssertEqualWithAccuracy(140.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(140.0, result, accuracy: accuracy)
         
         result = normalizeDegrees(360);
-        XCTAssertEqualWithAccuracy(0.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(0.0, result, accuracy: accuracy)
         
         result = normalizeDegrees(0);
-        XCTAssertEqualWithAccuracy(0.0, result, accuracy)
+        XCTAssertEqualWithAccuracy(0.0, result, accuracy: accuracy)
     }
     
     func testBackForthDate() {
-        if let date = getUTCDate(2012, 7, 4, 11, 20, 44) {
+        if let date = getUTCDate(2012, month: 7, day: 4, hour: 11, minute: 20, second: 44) {
             if let dc = getUTCComponentsFromDate(date) {
                 XCTAssertEqual(2012, dc.year)
                 XCTAssertEqual(7, dc.month)

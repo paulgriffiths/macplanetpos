@@ -24,14 +24,14 @@ class JulianDateTests: XCTestCase {
     }
 
     func testInitializeWithDate() {
-        var jd = JulianDate(date: getUTCDate(2013, 6, 2, 0, 0, 0)!)
-        XCTAssertEqualWithAccuracy(2456445.5, jd.jdate, accuracy)
+        var jd = JulianDate(date: getUTCDate(2013, month: 6, day: 2, hour: 0, minute: 0, second: 0)!)
+        XCTAssertEqualWithAccuracy(2456445.5, jd.jdate, accuracy: accuracy)
         
-        jd = JulianDate(date: getUTCDate(1980, 1, 1, 0, 0, 0)!)
-        XCTAssertEqualWithAccuracy(2444239.5, jd.jdate, accuracy)
+        jd = JulianDate(date: getUTCDate(1980, month: 1, day: 1, hour: 0, minute: 0, second: 0)!)
+        XCTAssertEqualWithAccuracy(2444239.5, jd.jdate, accuracy: accuracy)
         
-        jd = JulianDate(date: getUTCDate(1918, 11, 11, 11, 11, 0)!)
-        XCTAssertEqualWithAccuracy(2421908.9661, jd.jdate, accuracy)
+        jd = JulianDate(date: getUTCDate(1918, month: 11, day: 11, hour: 11, minute: 11, second: 0)!)
+        XCTAssertEqualWithAccuracy(2421908.9661, jd.jdate, accuracy: accuracy)
     }
 
 }

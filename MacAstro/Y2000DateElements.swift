@@ -8,7 +8,7 @@
 
 import Foundation
 
-private let EPOCH_Y2000 = getUTCDate(1999, 12, 31, 0, 0, 0)!
+private let EPOCH_Y2000 = getUTCDate(1999, month: 12, day: 31, hour: 0, minute: 0, second: 0)!
 private let SECS_IN_DAY = 86400.0
 
 final class Y2000DateElements: DateOrbitalElements {

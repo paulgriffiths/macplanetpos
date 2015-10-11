@@ -22,11 +22,11 @@ class EarthTest: XCTestCase {
     }
 
     func testEarth() {
-        if let date = getUTCDate(2015, 4, 6, 8, 27, 0) {
+        if let date = getUTCDate(2015, month: 4, day: 6, hour: 8, minute: 27, second: 0) {
             let pos = PlanetPosition.getPosition(.Earth, date: date)
-            XCTAssertEqualWithAccuracy(0.0, normalizeDegrees(pos.rightAscension), 0.00001)
-            XCTAssertEqualWithAccuracy(90.0, normalizeDegrees(pos.declination), 0.00001)
-            XCTAssertEqualWithAccuracy(0.0, pos.distance, 0.00001);
+            XCTAssertEqualWithAccuracy(0.0, normalizeDegrees(pos.rightAscension), accuracy: 0.00001)
+            XCTAssertEqualWithAccuracy(90.0, normalizeDegrees(pos.declination), accuracy: 0.00001)
+            XCTAssertEqualWithAccuracy(0.0, pos.distance, accuracy: 0.00001);
         }
         else {
             XCTFail("couldn't get date")

@@ -22,11 +22,11 @@ class SaturnTests: XCTestCase {
     }
 
     func testSaturn() {
-        if let date = getUTCDate(1947, 12, 1, 12, 0, 0) {
+        if let date = getUTCDate(1947, month: 12, day: 1, hour: 12, minute: 0, second: 0) {
             let pos = PlanetPosition.getPosition(.Saturn, date: date)
-            XCTAssertEqualWithAccuracy(146.079125, normalizeDegrees(pos.rightAscension), 0.02)
-            XCTAssertEqualWithAccuracy(14.6949444444444, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(8.84280824210253, pos.distance, 0.01);
+            XCTAssertEqualWithAccuracy(146.079125, normalizeDegrees(pos.rightAscension), accuracy: 0.02)
+            XCTAssertEqualWithAccuracy(14.6949444444444, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(8.84280824210253, pos.distance, accuracy: 0.01);
         }
         else {
             XCTFail("couldn't get date")

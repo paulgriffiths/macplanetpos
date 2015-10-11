@@ -23,7 +23,7 @@ class DMSTests: XCTestCase {
 
     func testInitializeZero() {
         let dms = DMS(degrees: 0)
-        XCTAssertEqualWithAccuracy(0.0, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(0.0, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(0, dms.wholeDegrees)
         XCTAssertEqual(0, dms.wholeMinutes)
         XCTAssertEqual(0, dms.wholeSeconds)
@@ -31,7 +31,7 @@ class DMSTests: XCTestCase {
     
     func testInitializePositiveWhole() {
         let dms = DMS(degrees: 90)
-        XCTAssertEqualWithAccuracy(90.0, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(90.0, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(90, dms.wholeDegrees)
         XCTAssertEqual(0, dms.wholeMinutes)
         XCTAssertEqual(0, dms.wholeSeconds)
@@ -39,7 +39,7 @@ class DMSTests: XCTestCase {
     
     func testInitializeNegativeWhole() {
         let dms = DMS(degrees: -90)
-        XCTAssertEqualWithAccuracy(-90.0, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(-90.0, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(-90, dms.wholeDegrees)
         XCTAssertEqual(0, dms.wholeMinutes)
         XCTAssertEqual(0, dms.wholeSeconds)
@@ -47,7 +47,7 @@ class DMSTests: XCTestCase {
     
     func testInitializePositiveFractional() {
         let dms = DMS(degrees: 111.374)
-        XCTAssertEqualWithAccuracy(111.374, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(111.374, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(111, dms.wholeDegrees)
         XCTAssertEqual(22, dms.wholeMinutes)
         XCTAssertEqual(26, dms.wholeSeconds)
@@ -55,7 +55,7 @@ class DMSTests: XCTestCase {
     
     func testInitializeNegativeFractional() {
         let dms = DMS(degrees: -111.374)
-        XCTAssertEqualWithAccuracy(-111.374, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(-111.374, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(-111, dms.wholeDegrees)
         XCTAssertEqual(-22, dms.wholeMinutes)
         XCTAssertEqual(-26, dms.wholeSeconds)
@@ -63,7 +63,7 @@ class DMSTests: XCTestCase {
     
     func testInitializePositiveGreaterThan360() {
         let dms = DMS(degrees: 504.892)
-        XCTAssertEqualWithAccuracy(504.892, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(504.892, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(504, dms.wholeDegrees)
         XCTAssertEqual(53, dms.wholeMinutes)
         XCTAssertEqual(31, dms.wholeSeconds)
@@ -71,7 +71,7 @@ class DMSTests: XCTestCase {
     
     func testInitializeNegativeGreaterThan360() {
         let dms = DMS(degrees: -504.892)
-        XCTAssertEqualWithAccuracy(-504.892, dms.degrees, 0.000001)
+        XCTAssertEqualWithAccuracy(-504.892, dms.degrees, accuracy: 0.000001)
         XCTAssertEqual(-504, dms.wholeDegrees)
         XCTAssertEqual(-53, dms.wholeMinutes)
         XCTAssertEqual(-31, dms.wholeSeconds)

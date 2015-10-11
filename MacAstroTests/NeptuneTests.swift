@@ -22,11 +22,11 @@ class NeptuneTests: XCTestCase {
     }
 
     func testNeptune() {
-        if let date = getUTCDate(1966, 9, 15, 9, 0, 0) {
+        if let date = getUTCDate(1966, month: 9, day: 15, hour: 9, minute: 0, second: 0) {
             let pos = PlanetPosition.getPosition(.Neptune, date: date)
-            XCTAssertEqualWithAccuracy(228.44925, normalizeDegrees(pos.rightAscension), 0.01)
-            XCTAssertEqualWithAccuracy(360 - 16.2009444444444, normalizeDegrees(pos.declination), 0.01)
-            XCTAssertEqualWithAccuracy(30.8457020366069, pos.distance, 0.01);
+            XCTAssertEqualWithAccuracy(228.44925, normalizeDegrees(pos.rightAscension), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(360 - 16.2009444444444, normalizeDegrees(pos.declination), accuracy: 0.01)
+            XCTAssertEqualWithAccuracy(30.8457020366069, pos.distance, accuracy: 0.01);
         }
         else {
             XCTFail("couldn't get date")

@@ -40,12 +40,14 @@ class PlanetData: NSObject, NSTableViewDataSource {
     
     private func getCurrentTimeString() -> String {
         let locale = NSLocale.currentLocale()
-        if let timeString = NSDate().descriptionWithLocale(locale) {
+        return NSDate().descriptionWithLocale(locale)
+        
+        /*if let timeString = NSDate().descriptionWithLocale(locale) {
             return "Updated: " + timeString
         }
         else {
             return "Couldn't get last update time"
-        }
+        }*/
  
     }
 }

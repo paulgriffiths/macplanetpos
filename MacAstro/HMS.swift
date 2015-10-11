@@ -12,19 +12,19 @@ private let SECS_IN_A_DAY = 86400.0
 private let SECS_IN_A_HOUR = 3600
 private let SECS_IN_A_MIN = 60
 
-private func toSeconds(#hours: Int) -> Int {
+private func toSeconds(hours hours: Int) -> Int {
     return hours * SECS_IN_A_HOUR
 }
 
-private func toSeconds(#minutes: Int) -> Int {
+private func toSeconds(minutes minutes: Int) -> Int {
     return minutes * SECS_IN_A_MIN
 }
 
-private func toMinutes(#seconds: Int) -> Int {
+private func toMinutes(seconds seconds: Int) -> Int {
     return seconds / SECS_IN_A_MIN
 }
 
-private func toHours(#seconds: Int) -> Int {
+private func toHours(seconds seconds: Int) -> Int {
     return seconds / SECS_IN_A_HOUR
 }
 
